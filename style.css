@@ -1,0 +1,219 @@
+/* 🌸 Global reset and fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Nunito:wght@400;600&display=swap');
+
+:root {
+  --main-color: #ffb6c1;       /* pastel pink */
+  --accent-color: #a3c4f3;     /* baby blue */
+  --background: #fffafc;       /* soft background */
+  --text-color: #444;
+  --shadow-color: rgba(255, 182, 193, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* 🌈 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px 40px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-radius: 0 0 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.nav-list a:hover, .nav-list a.active {
+  color: white;
+  background: var(--main-color);
+  box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+/* 💖 Hero section */
+.hero {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 700px;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+.hero:hover {
+  transform: translateY(-5px);
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: var(--accent-color);
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: var(--accent-color);
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px var(--shadow-color);
+}
+
+/* 📜 Content sections */
+.content-container, .resume-container {
+  max-width: 850px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px 50px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+h1, h2 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid var(--main-color);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+section {
+  margin-top: 25px;
+}
+
+/* 🧁 Blog and portfolio cards */
+.blog-post, .project-card {
+  background: #fff8fb;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+.blog-post:hover, .project-card:hover {
+  transform: translateY(-4px);
+}
+.blog-post h2, .project-card h2 {
+  color: var(--main-color);
+}
+.read-more {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* 🌷 Resume sections */
+.skills span {
+  display: inline-block;
+  background: var(--accent-color);
+  color: white;
+  margin: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 3px 6px var(--shadow-color);
+}
+
+/* 🐻 Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px 14px;
+  border: 2px solid #ffe4ec;
+  border-radius: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  background: #fffafc;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px var(--shadow-color);
+}
+
+.contact-form button {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact-form button:hover {
+  background: var(--accent-color);
+  transform: scale(1.05);
+}
+
+/* 🐾 Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  color: #888;
+  margin-top: 60px;
+  border-top: 2px solid #ffe4ec;
+  box-shadow: 0 -3px 6px var(--shadow-color);
+  border-radius: 20px 20px 0 0;
+}
