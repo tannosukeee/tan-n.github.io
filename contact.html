@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Tan Nguyen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo"><a href="index.html">Tan Nguyen</a></h1>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="content-container">
+    <h1>Contact Me</h1>
+    <p>If you'd like to get in touch for collaborations, internships, or just to say hi, feel free to reach out!</p>
+
+    <form class="contact-form" action="https://formspree.io/f/xwpkadny" method="POST">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Your Name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Your Email" required />
+
+      <label>Message</label>
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="alt-contact">
+      Or email me directly at 
+      <a href="mailto:nguyennhattan2707@gmail.com">nguyennhattan2707@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>© 2025 Tan Nhat Nguyen | All Rights Reserved</footer>
+</body>
+</html>
